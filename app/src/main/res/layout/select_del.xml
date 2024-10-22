@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/select_val"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="L4C  4214  10  15  20(45)               "
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Effacer?"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8" />
+
+                <Button
+                    android:id="@+id/del_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:text="ANNUIER"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/del_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:text="OK"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

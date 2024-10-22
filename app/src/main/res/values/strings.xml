@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Lottery</string>
+    <string name="prompt_password">Password</string>
+    <string name="key_error">Require device IMEI</string>
+    <string name="key">Device IMEI</string>
+    <string name="login">Connexion</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_password">Please enter a minimum password of 4 characters</string>
+
+    <string name="l4c_dropdown">L4C</string>
+    <string-array name="l4c_dropdown_items">
+        <item>L4C</item>
+        <item>L4C 1</item>
+        <item>L4C 2</item>
+        <item>L4C 3</item>
+    </string-array>
+
+    <string name="l5c_dropdown">L4C</string>
+    <string-array name="l5c_dropdown_items">
+        <item>L5C</item>
+        <item>L5C 1</item>
+        <item>L5C 2</item>
+        <item>L5C 3</item>
+    </string-array>
+
+    <string name="lottery_category_promt">All Category</string>
+    <string-array name="report_type_menu">
+        <item>Sale Report</item>
+        <item>Sold Tickets</item>
+        <item>Deleted Tickets</item>
+        <item>Winning Numbers</item>
+        <item>Winning Tickets</item>
+    </string-array>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/winnumbers_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:text="Ticket ID"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textview_border"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Date"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textview_border"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Lottery"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textview_border"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/action"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Action"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textview_border"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/C19000000"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progressBar_layout"
+        >
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:padding="20dp"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_blt"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="BLT"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bt_l3c"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="L3C"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/bt_l4c"
+                style="@style/SpinnerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/l4c_dropdown_items"
+                android:prompt="@string/l4c_dropdown"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2px"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/bt_l5c"
+                style="@style/SpinnerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/l5c_dropdown_items"
+                android:prompt="@string/l5c_dropdown"
+                android:layout_marginTop="2px"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bt_mrg"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="MRG"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Total des paris:"
+                        android:textAlignment="textEnd"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tds_count"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="0"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Valeur totale:"
+                        android:textAlignment="textEnd"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/vt_sum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="0"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="9.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="  GameCategory"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Number"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Amount   "
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_fini"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="Request Ticket"
+            android:textAlignment="center"
+            android:textDirection="rtl"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

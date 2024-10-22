@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "388538481917",
+    "firebase_url": "https://gwcenter-851ba-default-rtdb.firebaseio.com",
+    "project_id": "gwcenter-851ba",
+    "storage_bucket": "gwcenter-851ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388538481917:android:25344627e92589d7325294",
+        "android_client_info": {
+          "package_name": "com.elevenzon.pelo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388538481917-ibgob4neva5qaipa9ea9d8hru76i1316.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elevenzon.pelo",
+            "certificate_hash": "b8e50e99875d3fecf7f5f792ca3f7a3a953c1127"
+          }
+        },
+        {
+          "client_id": "388538481917-h178nb2klenjfeeoqkuh0ripn412npib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaYSaEGsZOgZunRJt-XSR6RAlZE587lKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388538481917-h178nb2klenjfeeoqkuh0ripn412npib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

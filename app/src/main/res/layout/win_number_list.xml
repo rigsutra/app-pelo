@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/winnumbers_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Date"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textview_border"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Lottery"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textview_border"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="L3C"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textview_border"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Second"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textview_border"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Third"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textview_border"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

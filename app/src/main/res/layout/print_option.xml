@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20sp"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="350sp"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/printer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bluetooth Printer" />
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/printer2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Q1/Q2 Bluetooth printer " />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/printer3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="ZTE &amp; MPTII" />-->
+
+                <RadioButton
+                    android:id="@+id/printer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUNMI Printer" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/print_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ok"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
